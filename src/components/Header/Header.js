@@ -4,16 +4,17 @@ import CommentInput from './Comment-input/CommentInput';
 
 
 
+
+
 function Header () {
     return (
         <>
         <div className="site-header">
             <div className="site-logo">
-                <img src = {logoImg} alt = 'Site logo'/>
+                <img id="logo-image" src = {logoImg} alt = 'Site logo'/>
             </div>
             <CommentInput/>
-        </div>
-        
+        </div>        
         </>
     )
 }

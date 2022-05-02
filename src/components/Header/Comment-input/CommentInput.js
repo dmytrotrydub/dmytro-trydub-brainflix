@@ -1,20 +1,27 @@
 import '../../../styles/partials/Header/Comment-input/_Comment-input.scss';
 import avatar from "../../../Assets/Images/Mohan-muruge.jpg";
-import searchIcon from '../../../Assets/Images/Icons/upload.svg';
+
 
 
 
 function Comment () {
+
+    const textInputValue = 'JOIN THE CONVERSATION'
     return (
         <div className="comment-holder">
-            <form >
-                <i className="search-icon"></i>
-                <input type="text" id = "comment-input" placeholder="Search"></input>
+            <form className="search-form">
+                <label htmlFor="comment-input"></label>
+                <input type="text" id="comment-input" placeholder="Search"></input>
+                <div className="avatar">
+                    <img id="avatar-picture-mobile" src={avatar} alt="commenter-avatar"/>
+                </div>
+                <button id="upload-button">
+                    UPLOAD
+                </button>             
+                <div className="avatar">
+                    <img id="avatar-picture" src={avatar} alt="commenter-avatar"/>
+                </div>
             </form>
-            <div className="avatar">
-                <img src={avatar} alt="commenter-avatar"/>
-            </div>
-            <button id="search-button">Upload</button>
         </div>
     )
 }
