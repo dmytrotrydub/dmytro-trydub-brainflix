@@ -16,9 +16,13 @@
 
     @include Mixins.tablet {
         flex-direction: row;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items:center;
         padding: 0 1rem;
+    }
+
+    @include Mixins.desktop{
+        padding: 0 5.5rem;
     }
 
     .site-logo{
@@ -29,7 +33,8 @@
         padding-top:1rem;
 
         @include Mixins.tablet {
-            padding: 0;
+            padding-top: 1rem;
+            padding-left: 1rem;
         }
     }
 }
