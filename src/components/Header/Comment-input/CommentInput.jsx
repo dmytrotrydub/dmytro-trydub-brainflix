@@ -11,10 +11,11 @@ function Comment() {
       <div className='avatar'>
         <img id='avatar-picture-mobile' src={avatar} alt='commenter-avatar' />
       </div>
-      <Button id='button'></Button>
+      <Button id='button'>UPLOAD</Button>
       <div className='avatar'>
         <img id='avatar-picture' src={avatar} alt='commenter-avatar' />
       </div>
+      git
     </div>
   );
 }
