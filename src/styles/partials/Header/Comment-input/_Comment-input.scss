@@ -1,138 +1,66 @@
-@use '../../../Mixins';
-@use '../../../variables';
+@use "../../../Mixins";
+@use "../../../variables";
 
+#avatar-picture {
+  max-height: 2.5rem;
+  height: 2rem;
+  width: 2rem;
+  max-width: 2.5rem;
+  border-radius: 50%;
+  display: none;
 
-#comment-input {
-    background-image: url('../../../../Assets/Images/Icons/search.svg');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    background-position: 3% 50% ;  
-    background-origin: border-box; 
-    padding-left:2rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    min-height: 2.25rem;
-    min-width: 12.7rem;
-    max-width: 100%;
-    font-size: 0.87rem;
-    line-height: 1.37rem;
-    font-weight:400;
-    display: flex;
-    flex-direction: row; 
-    border: 0.06rem solid variables.$brainFlixMercury;
-    border-radius: 0.25rem ;
-
-    @include Mixins.tablet {
-        height: 2.5rem;
-        min-width: 15rem;
-        width: 15rem;
-    }
-
-    @include Mixins.desktop {
-        width: 15rem;
-    }
+  @include Mixins.tablet {
+    display: initial;
+    width: 40px;
+    height: 40px;
+  }
 }
 
+#avatar-picture-mobile {
+  max-height: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  max-width: 2.5rem;
+  border-radius: 50%;
 
-
-#comment-input:focus{
-    outline: 0.12rem solid variables.$brainFlixBlue;
-
-}
-
-
-#search-icon{
-    position: absolute;
-    left: 10%;
-}
-
-#avatar-picture{
-    max-height: 2.5rem;
-    height: 2rem;
-    width: 2rem;
-    max-width: 2.5rem;
-    border-radius: 50%;
-    display: none; 
-    
-    @include Mixins.tablet {
-        display: initial;
-        width: 40px;
-        height: 40px;
-    }
-
-}
-
-#avatar-picture-mobile{
-    max-height: 2.5rem;
-    height: 2.5rem;
-    width: 2.5rem;
-    max-width: 2.5rem;
-    border-radius: 50%;
-    
-    @include Mixins.tablet {
-        display: none;
-    }
-}
-#upload-button {
-    background-image: url('../../../../Assets/Images/Icons/upload.svg');
-    background-color: variables.$brainFlixBlue;
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    background-origin: content-box;
-    background-position:2.5% 50%;
-    color: variables.$brainFlixWhite;
-    width: 100%;
-    height: 2.5rem;
-    border-color: variables.$brainFlixBlue;
-    border-radius: 0.25rem;
-    box-shadow: none;
-    margin: 0.5rem 0;
-    font-weight: 700;
-    padding: 0;
-
-    @include Mixins.tablet {
-        min-width: 9.37rem;
-        width: 9.37rem;
-
-    }
+  @include Mixins.tablet {
+    display: none;
+  }
 }
 
 .comment-holder {
-    display:flex;
-    flex-direction: column;
-    padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+
+  @include Mixins.tablet {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+
+  @include Mixins.desktop {
+    width: 50%;
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 
     @include Mixins.tablet {
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 70%;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      width: 100%;
     }
 
-    @include Mixins.desktop {
-            width:50%;
+    .avatar {
+      padding-left: 0.37rem;
+
+      @include Mixins.desktop {
+        padding-left: 1rem;
+      }
     }
-
-    .search-form{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        
-
-        @include Mixins.tablet {
-            justify-content: space-evenly;
-            flex-wrap: nowrap;
-            width: 100%;
-        }
-        
-        .avatar{
-            padding-left: 0.37rem;
-           
-
-            @include Mixins.desktop{
-                padding-left: 1rem;
-            }
-        }
-    }
+  }
 }
-
