@@ -1,0 +1,11 @@
+@use "../../../styles/Mixins";
+@use "../../../styles/variables";
+
+.video-info {
+  padding: 0 1rem;
+
+  &__title {
+    border-bottom: 1px solid variables.$brainFlixMercury;
+    padding-bottom: 1rem;
+  }
+}

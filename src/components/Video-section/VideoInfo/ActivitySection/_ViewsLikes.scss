@@ -1,0 +1,27 @@
+@use "../../../../styles/Mixins";
+@use "../../../../styles/variables";
+
+.views-likes {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3rem;
+}
+.views {
+  display: flex;
+  padding-bottom: 1rem;
+
+  &__amount {
+    padding-left: 0.5rem;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
+.likes {
+  display: flex;
+
+  &__amount {
+    padding-left: 0.5rem;
+    align-items: flex-start;
+    margin: 0;
+  }
+}

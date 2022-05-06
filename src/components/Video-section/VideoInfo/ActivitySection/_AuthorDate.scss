@@ -1,0 +1,17 @@
+@use "../../../../styles/Mixins";
+@use "../../../../styles/variables";
+
+.author-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+
+  &__author {
+    display: flex;
+    flex-shrink: 3;
+    margin: 0;
+    margin: 0;
+    text-align: top;
+  }
+}
