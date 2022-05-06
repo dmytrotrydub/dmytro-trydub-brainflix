@@ -8,7 +8,7 @@ function App() {
     <>
       <Header imageLogo='src/Assets/Images/Logo/BrainFlixLogo.svg' />
       <Video zhopa={4} imageSource='https://i.imgur.com/l2Xfgpl.jpg' />
-      <VideoInfo />
+      <VideoInfo titleName='BMX Rampage: 2021 Highlights' />
     </>
   );
 }

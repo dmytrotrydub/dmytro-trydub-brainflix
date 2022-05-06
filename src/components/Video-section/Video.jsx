@@ -1,4 +1,4 @@
-import "../../styles/partials/Video-section/_Video.scss";
+import "./_Video.scss";
 
 function Video(props) {
   return (

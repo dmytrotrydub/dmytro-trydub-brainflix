@@ -1,4 +1,4 @@
-import "../../styles/partials/Header/_Header.scss";
+import "./_Header.scss";
 import logoImg from "../../Assets/Images/Logo/BrainFlixLogo.svg";
 import CommentInput from "./Comment-input/CommentInput";
 
