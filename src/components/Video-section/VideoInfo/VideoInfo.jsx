@@ -5,6 +5,7 @@ import CommentForm from "./ActivitySection/CommentForm";
 import PostedComments from "./PostedComments";
 
 function VideoInfo(props) {
+  console.log(props);
   return (
     <div className='video-info'>
       <h2 className='video-info__title'>{props.titleName}</h2>

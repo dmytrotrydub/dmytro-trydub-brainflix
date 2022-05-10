@@ -14,16 +14,24 @@ class App extends React.Component {
       videoDetails: videoDetails,
       videos: videos,
     };
+    this.convertDate = (tS) => {
+      const timestamp = parseInt(this.state.videoDetails[0].timestamp);
+      const date = new Date(tS);
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      const year = date.getFullYear();
+      return `${month}/${day}/${year}`;
+    };
   }
   render() {
     //*Getting date
-    const timestamp = parseInt(this.state.videoDetails[0].timestamp);
-    const date = new Date(timestamp);
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    const year = date.getFullYear();
-    const fullDate = `${month}/${day}/${year}`;
-    this.state.fullDate = fullDate;
+    // const timestamp = parseInt(this.state.videoDetails[0].timestamp);
+    // const date = new Date(timestamp);
+    // const month = date.getMonth() + 1;
+    // const day = date.getDate();
+    // const year = date.getFullYear();
+    // const fullDate = `${month}/${day}/${year}`;
+    // this.state.fullDate = fullDate;
     //*-----------
 
     return (
@@ -37,7 +45,7 @@ class App extends React.Component {
           likes={this.state.videoDetails[0].likes}
           views={this.state.videoDetails[0].views}
           channel={this.state.videoDetails[0].channel}
-          date={this.state.fullDate}
+          date={this.convertDate(this.state.videoDetails[0].timestamp)}
           postedComments={this.state.videoDetails[0].comments}
         />
       </>

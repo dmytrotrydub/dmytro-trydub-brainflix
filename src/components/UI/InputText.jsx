@@ -2,7 +2,7 @@ const InputText = (props) => {
   return (
     <>
       <form className={props.className}>
-        <label htmlFor={props.id}>{props.children}</label>
+        <label htmlFor={props.id}>{props.title}</label>
         <input
           type='text'
           id={props.id}

@@ -14,6 +14,7 @@ const CommentForm = (props) => {
           placeholder='Add a new comment'
           className='comment'
           id='comment-form-input'
+          title='JOIN THE CONVERSATION'
         ></InputText>
         <Button className='button' id='add-comment'>
           COMMENT
