@@ -6,8 +6,8 @@ const ActivitySection = (props) => {
   return (
     <>
       <div className='activity-section'>
-        <AuthorDate />
-        <ViewsLikes />
+        <AuthorDate channel={props.channel} date={props.date} />
+        <ViewsLikes likes={props.likes} views={props.views} />
       </div>
     </>
   );

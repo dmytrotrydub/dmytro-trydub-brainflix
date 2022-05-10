@@ -1,15 +1,12 @@
-import "./_InputText.scss";
-
 const InputText = (props) => {
   return (
     <>
-      <form className='search-form'>
-        <label htmlFor={props.id}></label>
+      <form className={props.className}>
+        <label htmlFor={props.id}>{props.children}</label>
         <input
           type='text'
           id={props.id}
-          className={props.className}
-          placeholder='Search'
+          placeholder={props.placeholder}
         ></input>
       </form>
     </>

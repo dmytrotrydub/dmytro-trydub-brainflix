@@ -1,8 +1,7 @@
 @use "../../styles/Mixins";
 @use "../../styles/variables";
 
-#button {
-  background-image: url("../../Assets/Images/Icons/upload.svg");
+.button {
   background-color: variables.$brainFlixBlue;
   background-repeat: no-repeat;
   background-size: 1.25rem;

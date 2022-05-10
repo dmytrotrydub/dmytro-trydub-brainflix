@@ -1,6 +1,6 @@
 import "./_Header.scss";
 import logoImg from "../../Assets/Images/Logo/BrainFlixLogo.svg";
-import CommentInput from "./Comment-input/CommentInput";
+import Search from "./Comment-input/Search";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
         <div className='site-logo'>
           <img id='logo-image' src={logoImg} alt='Site logo' />
         </div>
-        <CommentInput />
+        <Search placeholder='Search' className='search' id='form-input' />
       </div>
     </>
   );
