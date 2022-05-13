@@ -1,8 +1,8 @@
 import "./_Search.scss";
-import "../../UI/_InputText.scss";
+import "../../UI/InputText/_InputText.scss";
 import avatar from "../../../Assets/Images/Mohan-muruge.jpg";
-import InputText from "../../UI/InputText";
-import Button from "../../UI/Button";
+import InputText from "../../UI/InputText/InputText";
+import Button from "../../UI/Button/Button";
 
 function Search(props) {
   return (

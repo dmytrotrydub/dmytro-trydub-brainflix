@@ -1,8 +1,8 @@
 import "./_Video-info.scss";
 import ActivitySection from "./ActivitySection/ActivitySection";
-import VideoDescription from "./ActivitySection/VideoDesctiption";
-import CommentForm from "./ActivitySection/CommentForm";
-import PostedComments from "./PostedComments";
+import VideoDescription from "./ActivitySection/VideoDescription/VideoDesctiption";
+import CommentForm from "./ActivitySection/CommentForm/CommentForm";
+import PostedComments from "./ActivitySection/PostedComments/PostedComments";
 
 function VideoInfo(props) {
   console.log(props);

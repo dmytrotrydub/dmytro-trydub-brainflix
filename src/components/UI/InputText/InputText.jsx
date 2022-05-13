@@ -1,3 +1,5 @@
+import "./_InputText.scss";
+
 const InputText = (props) => {
   return (
     <>

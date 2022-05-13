@@ -1,6 +1,6 @@
 import "./_ActivitySection.scss";
-import ViewsLikes from "./ViewsLikes";
-import AuthorDate from "./AuthorDate";
+import ViewsLikes from "./ViewsLikes/ViewsLikes";
+import AuthorDate from "./AuthorDate/AuthorDate";
 
 const ActivitySection = (props) => {
   return (

@@ -1,5 +1,5 @@
-import "./_PostedComment.scss";
-import Comment from "../VideoInfo/ActivitySection/Comment";
+import "./_PostedComments.scss";
+import Comment from "../Comment/Comment";
 
 const PostedComments = (props) => {
   return (

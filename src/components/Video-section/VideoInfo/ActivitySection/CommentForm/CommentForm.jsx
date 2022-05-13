@@ -1,7 +1,7 @@
 import "./_CommentForm.scss";
-import commentAvatar from "../../../../Assets/Images/Mohan-muruge.jpg";
-import Button from "../../../UI/Button";
-import InputText from "../../../UI/InputText";
+import commentAvatar from "../../../../../Assets/Images/Mohan-muruge.jpg";
+import Button from "../../../../UI/Button/Button";
+import InputText from "../../../../UI/InputText/InputText";
 
 const CommentForm = (props) => {
   return (

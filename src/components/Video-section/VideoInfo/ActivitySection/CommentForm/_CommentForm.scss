@@ -1,5 +1,5 @@
-@use "../../../../styles/Mixins";
-@use "../../../../styles/variables";
+@use "../../../../../styles/Mixins";
+@use "../../../../../styles/variables";
 
 .comment-form {
   display: flex;
@@ -27,7 +27,7 @@
   padding-bottom: 0;
 }
 #comment-form-input {
-  background-image: url(../../../../Assets/Images/Icons/search.svg);
+  background-image: url("../../../../../Assets/Images/Icons/search.svg");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   background-position: 3% 50%;
@@ -54,7 +54,7 @@
 }
 
 #add_comment {
-  background-image: url("../../../../Assets/Images/Icons/add_comment.svg");
+  background-image: url("../../../../../Assets/Images/Icons/add_comment.svg");
   width: 100%;
   min-width: 12.7rem;
 }
