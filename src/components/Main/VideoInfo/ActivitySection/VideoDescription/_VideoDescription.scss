@@ -1,0 +1,8 @@
+@use "../../../../../styles/Mixins";
+@use "../../../../../styles/variables";
+
+.description-comments {
+  &__comments-amount {
+    font-weight: bold;
+  }
+}

@@ -1,17 +1,28 @@
+@use "./styles/Mixins";
+@use "./styles/variables";
+
 @font-face {
-    font-family: 'AvenirNext LT Pro';
-    src: url('./Assets/Fonts/AvenirNextLTPro-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "AvenirNext LT Pro";
+  src: url("./Assets/Fonts/AvenirNextLTPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AvenirNext LT Pro';
-    src: url('./Assets/Fonts/AvenirNextLTPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "AvenirNext LT Pro";
+  src: url("./Assets/Fonts/AvenirNextLTPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+p {
+  font-size: 0.81rem;
+  line-height: 1.12rem;
 
+  @include Mixins.tablet {
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+  }
+}

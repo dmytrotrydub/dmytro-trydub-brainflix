@@ -2,10 +2,17 @@
 @use "../../../styles/variables";
 
 .video-info {
-  padding: 0 1rem;
+  @include Mixins.desktop {
+    width: 68%;
+    border-right: 1px solid variables.$brainFlixMercury;
+  }
 
   &__title {
     border-bottom: 1px solid variables.$brainFlixMercury;
     padding-bottom: 1rem;
+    margin-bottom: 0;
+
+    @include Mixins.tablet {
+    }
   }
 }

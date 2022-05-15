@@ -8,16 +8,17 @@ function VideoInfo(props) {
   console.log(props);
   return (
     <div className='video-info'>
-      <h2 className='video-info__title'>{props.titleName}</h2>
+      <h1 className='video-info__title'>{props.titleName}</h1>
       <ActivitySection
         channel={props.channel}
         likes={props.likes}
         views={props.views}
         date={props.date}
+        commented={props.postedComments.length}
       />
       <VideoDescription
-        comments={props.comments}
         videoDescription={props.videoDescription}
+        commented={props.postedComments.length}
       />
       <CommentForm />
       <PostedComments postedComments={props.postedComments} />

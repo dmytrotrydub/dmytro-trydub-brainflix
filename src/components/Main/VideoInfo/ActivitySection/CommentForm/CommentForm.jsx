@@ -1,7 +1,7 @@
 import "./_CommentForm.scss";
 import commentAvatar from "../../../../../Assets/Images/Mohan-muruge.jpg";
 import Button from "../../../../UI/Button/Button";
-import InputText from "../../../../UI/InputText/InputText";
+import TextArea from "../../../../UI/TextArea/TextArea";
 
 const CommentForm = (props) => {
   return (
@@ -10,15 +10,17 @@ const CommentForm = (props) => {
         <img className='avatar-picture' src={commentAvatar} alt='Avatar' />
       </div>
       <div className='comment-form__comment-submit'>
-        <InputText
+        <TextArea
           placeholder='Add a new comment'
           className='comment'
-          id='comment-form-input'
+          id='comment-form-textarea'
           title='JOIN THE CONVERSATION'
-        ></InputText>
-        <Button className='button' id='add-comment'>
-          COMMENT
-        </Button>
+        ></TextArea>
+        <div className='comment-form__button-container'>
+          <Button className='button' id='add-comment'>
+            COMMENT
+          </Button>
+        </div>
       </div>
     </div>
   );

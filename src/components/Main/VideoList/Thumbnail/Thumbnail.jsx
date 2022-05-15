@@ -1,7 +1,6 @@
 import "./_Thumbnail.scss";
 
 const Thumbnail = (props) => {
-  console.log(props);
   return (
     <div className='thumbnail'>
       <div className='thumbnail__poster-container'>

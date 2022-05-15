@@ -15,10 +15,21 @@
   box-shadow: none;
   margin: 0.5rem 0;
   font-weight: 700;
-  padding: 0;
+  text-align: center;
 
   @include Mixins.tablet {
     min-width: 9.37rem;
     width: 9.37rem;
+    height: 2.5rem;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+#add_comment {
+  background-image: url("../../../Assets/Images/Icons/add_comment.svg");
+  width: 100%;
+  min-width: 12.7rem;
 }
