@@ -5,7 +5,6 @@ import CommentForm from "./ActivitySection/CommentForm/CommentForm";
 import PostedComments from "./ActivitySection/PostedComments/PostedComments";
 
 function VideoInfo(props) {
-  console.log(props);
   return (
     <div className='video-info'>
       <h1 className='video-info__title'>{props.titleName}</h1>
@@ -14,7 +13,6 @@ function VideoInfo(props) {
         likes={props.likes}
         views={props.views}
         date={props.date}
-        commented={props.postedComments.length}
       />
       <VideoDescription
         videoDescription={props.videoDescription}

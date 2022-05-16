@@ -6,6 +6,7 @@ import Video from "./components/Video-section/Video";
 import videoDetails from "./Data/video-details.json";
 import videos from "./Data/videos.json";
 import Main from "./components/Main/Main";
+import { filteredVideo } from "./components/helper/Helper";
 
 class App extends React.Component {
   constructor() {
@@ -15,6 +16,17 @@ class App extends React.Component {
       videos: videos,
     };
   }
+  displayVideo = (event, id) => {
+    event.preventDefault();
+    const videoUpdate = filteredVideo(videoDetails, id);
+    console.log(videoUpdate);
+    this.setState((prevState) => {
+      return {
+        videoDetails: videoUpdate[0],
+      };
+    });
+  };
+
   render() {
     return (
       <>
@@ -30,6 +42,7 @@ class App extends React.Component {
           date={this.state.videoDetails.timestamp}
           postedComments={this.state.videoDetails.comments}
           videoList={this.state.videos}
+          handleClick={this.displayVideo}
         />
       </>
     );

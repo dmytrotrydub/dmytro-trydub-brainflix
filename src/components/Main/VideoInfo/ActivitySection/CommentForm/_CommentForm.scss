@@ -19,6 +19,7 @@
 
   @include Mixins.desktop {
     padding: 0;
+    padding-right: 1rem;
   }
 
   &__avatar {

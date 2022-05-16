@@ -1,28 +1,22 @@
 import "./_Main.scss";
 import VideoInfo from "./VideoInfo/VideoInfo";
 import VideoList from "./VideoList/VideoList";
+import { timeConverter } from "../helper/Helper";
 
 const Main = (props) => {
-  const timestamp = parseInt(props.date);
-  const date = new Date(timestamp);
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  const year = date.getFullYear();
-  const fullDate = `${month}/${day}/${year}`;
-
+  const convertedTime = timeConverter(props.date);
   return (
     <div className='main'>
       <VideoInfo
-        // comments={props.comments}
         videoDescription={props.videoDescription}
         titleName={props.titleName}
         likes={props.likes}
         views={props.views}
         channel={props.channel}
-        date={fullDate}
+        date={convertedTime}
         postedComments={props.postedComments}
       />
-      <VideoList videoList={props.videoList} />
+      <VideoList videoList={props.videoList} handleClick={props.handleClick} />
     </div>
   );
 };

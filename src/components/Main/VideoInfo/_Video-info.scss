@@ -11,8 +11,5 @@
     border-bottom: 1px solid variables.$brainFlixMercury;
     padding-bottom: 1rem;
     margin-bottom: 0;
-
-    @include Mixins.tablet {
-    }
   }
 }

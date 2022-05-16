@@ -5,4 +5,8 @@
   &__comments-amount {
     font-weight: bold;
   }
+
+  @include Mixins.desktop {
+    padding-right: 1rem;
+  }
 }
