@@ -4,11 +4,7 @@ function Video(props) {
   return (
     <>
       <section className='video-section'>
-        <video
-          className='video-frame'
-          poster={props.imageSource}
-          controls
-        ></video>
+        <video className='video-frame' poster={props.image} controls></video>
       </section>
     </>
   );

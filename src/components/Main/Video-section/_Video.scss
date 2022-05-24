@@ -1,5 +1,5 @@
-@use "../../styles/Mixins";
-@use "../../styles/variables";
+@use "../../../styles/Mixins";
+@use "../../../styles/variables";
 
 .video-section {
   @include Mixins.tablet {
