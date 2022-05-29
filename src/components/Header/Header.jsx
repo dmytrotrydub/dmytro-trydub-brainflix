@@ -1,5 +1,5 @@
-import "./_Header.scss";
-import logoImg from "../../Assets/Images/Logo/BrainFlixLogo.svg";
+import "./Header.scss";
+import logoImg from "../../assets/images/logo/BrainFlixLogo.svg";
 import Search from "./Comment-input/Search";
 
 function Header() {

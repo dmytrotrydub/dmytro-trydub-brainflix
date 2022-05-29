@@ -1,4 +1,4 @@
-import "./_Video.scss";
+import "./Video.scss";
 
 function Video(props) {
   return (

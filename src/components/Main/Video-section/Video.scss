@@ -13,6 +13,11 @@
 
   .video-frame {
     width: 100%;
+    max-height: 18rem;
+    @include Mixins.tablet {
+      min-height: 29.68rem;
+      max-height: 29.68rem;
+    }
   }
 
   .button {

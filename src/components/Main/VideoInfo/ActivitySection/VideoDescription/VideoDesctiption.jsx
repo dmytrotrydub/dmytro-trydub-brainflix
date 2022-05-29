@@ -1,4 +1,4 @@
-import "./_VideoDescription.scss";
+import "./VideoDescription.scss";
 
 const VideoDescription = (props) => {
   return (

@@ -1,4 +1,4 @@
-import "./_Video-info.scss";
+import "./Video-info.scss";
 import ActivitySection from "./ActivitySection/ActivitySection";
 import VideoDescription from "./ActivitySection/VideoDescription/VideoDesctiption";
 import CommentForm from "./ActivitySection/CommentForm/CommentForm";

@@ -1,6 +1,6 @@
-import "./_Search.scss";
+import "./Search.scss";
 import "../../UI/InputText/_InputText.scss";
-import avatar from "../../../Assets/Images/Mohan-muruge.jpg";
+import avatar from "../../../assets/images/Mohan-muruge.jpg";
 import InputText from "../../UI/InputText/InputText";
 import Button from "../../UI/Button/Button";
 

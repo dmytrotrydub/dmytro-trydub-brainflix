@@ -1,0 +1,24 @@
+@use "../../styles/Mixins";
+@use "../../styles/variables";
+
+.main {
+  padding: 0 1rem;
+
+  @include Mixins.tablet {
+    padding: 0 2rem;
+  }
+  @include Mixins.desktop {
+    padding: 0 5.5rem;
+  }
+
+  &__video-info {
+    @include Mixins.tablet {
+      flex-direction: column;
+    }
+    @include Mixins.desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

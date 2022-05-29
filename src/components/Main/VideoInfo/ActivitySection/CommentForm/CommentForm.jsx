@@ -1,5 +1,5 @@
-import "./_CommentForm.scss";
-import commentAvatar from "../../../../../Assets/Images/Mohan-muruge.jpg";
+import "./CommentForm.scss";
+import commentAvatar from "../../../../../assets/images/Mohan-muruge.jpg";
 import Button from "../../../../UI/Button/Button";
 import TextArea from "../../../../UI/TextArea/TextArea";
 

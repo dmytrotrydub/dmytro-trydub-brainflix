@@ -1,10 +1,10 @@
 import React from "react";
-import siteLogo from "./Assets/Images/Logo/BrainFlixLogo.svg";
+import siteLogo from "./assets/images/logo/BrainFlixLogo.svg";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Video from "./components/Main/Video-section/Video";
-import videoDetails from "./Data/video-details.json";
-import videos from "./Data/videos.json";
+import videoDetails from "./data/video-details.json";
+import videos from "./data/videos.json";
 import Main from "./components/Main/Main";
 import { filteredVideo } from "./components/helper/Helper";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -33,9 +33,13 @@ class App extends React.Component {
         <Header imageLogo={siteLogo} />
 
         <Switch>
-          <Route path='/' component={Main} />
+          <Route
+            path='/'
+            render={(props) => (
+              <Main props={this.state} handleClick={this.displayVideo} />
+            )}
+          />
         </Switch>
-        {/* <Main props={this.state} /> */}
       </BrowserRouter>
     );
   }

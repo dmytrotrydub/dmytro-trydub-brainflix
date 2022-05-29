@@ -2,6 +2,9 @@
 @use "../../../styles/variables";
 
 .video-info {
+  display: flex;
+  flex-direction: column;
+
   @include Mixins.desktop {
     width: 68%;
     border-right: 1px solid variables.$brainFlixMercury;
@@ -11,5 +14,9 @@
     border-bottom: 1px solid variables.$brainFlixMercury;
     padding-bottom: 1rem;
     margin-bottom: 0;
+
+    @include Mixins.tablet {
+      border-bottom: none;
+    }
   }
 }

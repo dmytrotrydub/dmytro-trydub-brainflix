@@ -1,4 +1,4 @@
-import "./_VideoList.scss";
+import "./VideoList.scss";
 import Thumbnail from "./Thumbnail/Thumbnail";
 
 const VideoList = (props) => {

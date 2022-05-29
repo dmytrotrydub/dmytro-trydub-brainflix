@@ -1,4 +1,4 @@
-import "./_Comment.scss";
+import "./Comment.scss";
 
 const Comment = (props) => {
   return (

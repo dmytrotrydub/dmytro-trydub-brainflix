@@ -1,4 +1,4 @@
-import "./_Thumbnail.scss";
+import "./Thumbnail.scss";
 
 const Thumbnail = (props) => {
   return (

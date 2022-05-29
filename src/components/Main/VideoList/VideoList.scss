@@ -3,10 +3,6 @@
 
 .video-list {
   @include Mixins.desktop {
-    width: 30%;
-  }
-
-  @include Mixins.desktop {
     padding-left: 1rem;
   }
   &__heading {
