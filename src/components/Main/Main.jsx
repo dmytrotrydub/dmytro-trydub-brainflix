@@ -5,7 +5,6 @@ import { timeConverter } from "../helper/Helper";
 import Video from "./Video-section/Video";
 
 const Main = (props) => {
-  // console.log(props);
   const convertedTime = timeConverter(props.props.videoDetails.timestamp);
   return (
     <div className='main'>
@@ -22,6 +21,7 @@ const Main = (props) => {
         />
         <VideoList
           videoList={props.props.videos}
+          selectedVideo ={props.props.videoDetails}
           handleClick={props.handleClick}
         />
       </div>

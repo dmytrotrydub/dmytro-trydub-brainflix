@@ -2,7 +2,6 @@ import React from "react";
 import siteLogo from "./assets/images/logo/BrainFlixLogo.svg";
 import "./App.scss";
 import Header from "./components/Header/Header";
-import Video from "./components/Main/Video-section/Video";
 import videoDetails from "./data/video-details.json";
 import videos from "./data/videos.json";
 import Main from "./components/Main/Main";
@@ -20,11 +19,13 @@ class App extends React.Component {
   displayVideo = (event, id) => {
     event.preventDefault();
     const videoUpdate = filteredVideo(videoDetails, id);
-    this.setState((prevState) => {
+    this.setState((id) => {
       return {
         videoDetails: videoUpdate[0],
       };
     });
+
+
   };
 
   render() {
