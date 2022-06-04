@@ -24,6 +24,7 @@
 
   &__title-channel {
     width: 65%;
+    text-decoration: none;
 
     @include Mixins.tablet {
       width: 80%;

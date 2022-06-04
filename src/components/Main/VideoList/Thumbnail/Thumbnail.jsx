@@ -4,9 +4,9 @@ const Thumbnail = (props) => {
   return (
     <div
       className='thumbnail'
-      onClick={(event) => {
-        props.handleClick(event, props.video.id);
-      }}
+      // onClick={(event) => {
+      //   props.handleClick(event, props.video.id);
+      // }}
     >
       <div className='thumbnail__poster-container'>
         <img src={props.video.image} alt={props.video.title} />
