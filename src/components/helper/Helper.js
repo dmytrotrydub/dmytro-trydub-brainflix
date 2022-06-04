@@ -9,9 +9,7 @@ export const timeConverter = (dateConv) => {
   return fullDate;
 };
 
-// export const removeVideo = (id) => {
-//   const clickedVideo = id;
-// };
+
 
 export const filteredVideo = (videoArray, filteredVideo) => {
   const chosenVideo = videoArray.filter((id) => id.id === filteredVideo);

@@ -2,9 +2,9 @@ import "./home.scss";
 import Main from '../../components/Main/Main';
 
 const Home = (props) => {
-    console.log();
+    console.log("props inside home", props);
     return (
-        <Main  />
+        <Main videoData={props}/>
     )
         
 };
