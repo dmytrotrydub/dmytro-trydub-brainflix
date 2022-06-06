@@ -1,4 +1,4 @@
-import "./AuthorDate.scss";
+import "./authorDate.scss";
 
 const AuthorDate = (props) => {
   return (

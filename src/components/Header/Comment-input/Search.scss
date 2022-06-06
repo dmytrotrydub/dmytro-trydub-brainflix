@@ -55,6 +55,12 @@
 
   a{
     width: 100%;
+
+    @include Mixins.tablet {
+      display: flex;
+      flex-wrap: wrap;
+      width: 9.62rem;
+    }
   }
 }
 

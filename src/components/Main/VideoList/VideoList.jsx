@@ -1,23 +1,22 @@
-import "./VideoList.scss";
+import "./videoList.scss";
 import Thumbnail from "./Thumbnail/Thumbnail";
 import { Link } from "react-router-dom";
 
 const VideoList = (props) => {
-  // console.log(props);
+  console.log(props);
+
   const videoList = props.videoList
     .filter((video) => {
       return video.id !== props.selectedVideo.id;
     })
     .map((video) => (
-
       <Link
         style={{ textDecoration: "none", color: "inherit" }}
         to={`/video/${video.id}`}
         key={video.id}
       >
         <Thumbnail video={video} />
-      </Link >
-        
+      </Link>
     ));
 
   return (

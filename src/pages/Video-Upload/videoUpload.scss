@@ -1,0 +1,175 @@
+@use "../../styles/Mixins";
+@use "../../styles/variables";
+
+#publish-button {
+  background-image: url("../../assets/images/icons/publish.svg");
+
+  @include Mixins.desktop {
+    order: 2;
+    margin-left: 24px;
+  }
+}
+
+.video-upload {
+  padding: 0 1rem;
+  border-top: 1px solid variables.$brainFlixMercury;
+
+  @include Mixins.tablet {
+    padding: 0 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include Mixins.desktop {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .video-form {
+      @include Mixins.desktop {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .input-forms {
+        width: 100%;
+
+        @include Mixins.desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+      }
+
+      .image-holder {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include Mixins.tablet {
+          width: 50%;
+        }
+
+        @include Mixins.desktop {
+          width: 100%;
+          margin: 0;
+          display: block;
+          flex-wrap: wrap;
+          object-fit: contain;
+        }
+
+        .video-thumbnail {
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          border-radius: 0.25rem;
+
+          @include Mixins.desktop {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .buttons-holder {
+      @include Mixins.desktop {
+        position: absolute;
+        bottom: 200px;
+        right: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+
+    .title-form {
+      display: flex;
+      flex-direction: column;
+
+      @include Mixins.tablet {
+        width: 100%;
+      }
+
+      #video-title {
+        width: 96%;
+        background-color: variables.$brainFlixAlabaster;
+        background-position: 3% 50%;
+        background-origin: border-box;
+        padding-left: 0.5rem;
+        min-height: 2.25rem;
+        min-width: 12.7rem;
+        max-width: 100%;
+        font-size: 0.87rem;
+        line-height: 1.37rem;
+        font-weight: 400;
+        display: flex;
+        flex-direction: row;
+        border: 0.06rem solid variables.$brainFlixMercury;
+        border-radius: 0.25rem;
+        text-align: left;
+
+        ::placeholder {
+          color: variables.$brainFlixBlack;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+
+        @include Mixins.tablet {
+          height: 2.5rem;
+          min-width: 15rem;
+          width: 96%;
+        }
+
+        @include Mixins.desktop {
+          width: 15rem;
+        }
+      }
+    }
+
+    .decription-form {
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+
+      @include Mixins.desktop {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+      }
+    }
+
+    #video-description {
+      height: 100px;
+      padding-top: 8px;
+      width: 96%;
+      background-color: variables.$brainFlixAlabaster;
+      border: 0.5px solid variables.$brainFlixMercury;
+      font-family: inherit;
+      padding-left: 0.5rem;
+
+      @include Mixins.desktop {
+        width: 40%;
+      }
+
+      ::placeholder {
+        color: variables.$brainFlixBlack;
+        font-size: inherit;
+      }
+    }
+
+    .link-holder {
+      margin-top: 1.5rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      @include Mixins.desktop {
+        order: 3;
+      }
+    }
+  }
+}

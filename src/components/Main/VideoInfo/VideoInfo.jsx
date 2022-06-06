@@ -1,26 +1,30 @@
-import "./Video-info.scss";
+import "./video-info.scss";
 import ActivitySection from "./ActivitySection/ActivitySection";
 import VideoDescription from "./ActivitySection/VideoDescription/VideoDesctiption";
 import CommentForm from "./ActivitySection/CommentForm/CommentForm";
 import PostedComments from "./ActivitySection/PostedComments/PostedComments";
+import {timeConverter} from "../../helper/Helper";
 
 function VideoInfo(props) {
-  console.log(props);
+  console.log(props.videoDescription.timestamp);
+  // !data convertion
+  const convertedTime = timeConverter(props.videoDescription.timestamp);
+  // !---------------]
   return (
     <div className='video-info'>
-      <h1 className='video-info__title'>{props.videoDetails.title}</h1>
+      <h1 className='video-info__title'>{props.title}</h1>
       <ActivitySection
-        channel={props.videoDetails.channel}
-        likes={props.videoDetails.likes}
-        views={props.videoDetails.views}
-        date={props.videoDetails.date}
+        channel={props.channel}
+        likes={props.likes}
+        views={props.views}
+        date={convertedTime}
       />
       <VideoDescription
-        videoDescription={props.videoDetails}
-        commented={props.videoDetails.comments.length}
+        videoDescription={props.videoDescription}
+        commented={props.postedComments.length}
       />
       <CommentForm />
-      <PostedComments postedComments={props.videoDetails.comments} />
+      <PostedComments postedComments={props.postedComments} />
     </div>
   );
 }
