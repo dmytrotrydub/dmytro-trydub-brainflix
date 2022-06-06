@@ -19,7 +19,6 @@ class Main extends React.Component {
   componentDidMount = () => {
     const url = "https://project-2-api.herokuapp.com";
     const apiKey = "91cf2af5-8d83-43f3-9997-f3c637393ce0";
-    // const singleVideoRequestRoute = this.props.videoData.routerProps.match.params.id;
     // console.log(singleVideoRequestRoute);
     //!creating an object to update the state with it after
     let videoList = null
