@@ -1,6 +1,6 @@
-import "./_ViewsLikes.scss";
-import viewsIcon from "../../../../../Assets/Images/Icons/views.svg";
-import likesIcon from "../../../../../Assets/Images/Icons/likes.svg";
+import "./viewsLikes.scss";
+import viewsIcon from "../../../../../assets/images/icons/views.svg";
+import likesIcon from "../../../../../assets/images/icons/likes.svg";
 
 const ViewsLikes = (props) => {
   return (

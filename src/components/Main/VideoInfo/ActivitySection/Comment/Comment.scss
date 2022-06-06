@@ -1,0 +1,54 @@
+@use "../../../../../styles/Mixins";
+@use "../../../../../styles/variables";
+
+.comment-card {
+  font-size: 0.81rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  border-top: 1px solid variables.$brainFlixMercury;
+  border-bottom: 1px solid variables.$brainFlixMercury;
+
+  @include Mixins.desktop {
+    padding-right: 1rem;
+  }
+
+  &__avatar-holder {
+    background-color: variables.$brainFlixMercury;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-top: 6px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+
+  &__comment-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    @include Mixins.tablet {
+      width: 90%;
+    }
+
+    .name-date {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &__date {
+        color: variables.$brainFlixSilver;
+      }
+
+      &__name {
+        font-weight: 700;
+      }
+    }
+  }
+}

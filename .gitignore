@@ -10,6 +10,8 @@
 
 # production
 /build
+/BrainFlix-Package-Sprint-1
+/BrainFlix-Package-Sprint-2
 
 # misc
 .DS_Store

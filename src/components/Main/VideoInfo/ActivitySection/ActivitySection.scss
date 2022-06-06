@@ -1,0 +1,16 @@
+@use "../../../../styles/Mixins";
+@use "../../../../styles/variables";
+
+.activity-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: inherit;
+  border-bottom: 1px solid variables.$brainFlixMercury;
+  padding: 0.5rem 0;
+
+  @include Mixins.desktop {
+    padding-right: 1rem;
+  }
+}

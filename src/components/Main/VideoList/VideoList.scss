@@ -1,0 +1,11 @@
+@use "../../../styles/Mixins";
+@use "../../../styles/variables";
+
+.video-list {
+  @include Mixins.desktop {
+    padding-left: 1rem;
+  }
+  &__heading {
+    color: variables.$brainFlixSilver;
+  }
+}

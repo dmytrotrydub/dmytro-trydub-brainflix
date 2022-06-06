@@ -1,4 +1,4 @@
-import "./_PostedComments.scss";
+import "./PostedComments.scss";
 import Comment from "../Comment/Comment";
 import { timeConverter } from "../../../../helper/Helper";
 

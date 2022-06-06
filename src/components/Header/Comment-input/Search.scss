@@ -1,0 +1,70 @@
+@use "../../../styles/Mixins";
+@use "../../../styles/variables";
+
+#form-input {
+  background-image: url("../../../assets/images/icons/search.svg");
+  background-repeat: no-repeat;
+  padding-left: 0;
+}
+
+#search-form {
+  width: 100%;
+}
+
+.button {
+  background-image: url("../../../assets/images/icons/upload.svg");
+}
+
+#search-icon {
+  position: absolute;
+  left: 10%;
+}
+
+.comment-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+
+  @include Mixins.tablet {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+
+  @include Mixins.desktop {
+    width: 50%;
+  }
+
+  .avatar {
+    padding-left: 0.37rem;
+    order: 0;
+    display: flex;
+    align-items: center;
+
+    @include Mixins.tablet {
+      order: 1;
+    }
+
+    @include Mixins.desktop {
+      padding-left: 1rem;
+    }
+  }
+
+  a{
+    width: 100%;
+
+    @include Mixins.tablet {
+      display: flex;
+      flex-wrap: wrap;
+      width: 9.62rem;
+    }
+  }
+}
+
+.search-form {
+  min-width: 12.7rem;
+  width: 60%;
+}

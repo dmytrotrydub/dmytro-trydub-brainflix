@@ -1,4 +1,4 @@
-import "./_ActivitySection.scss";
+import "./activitySection.scss";
 import ViewsLikes from "./ViewsLikes/ViewsLikes";
 import AuthorDate from "./AuthorDate/AuthorDate";
 

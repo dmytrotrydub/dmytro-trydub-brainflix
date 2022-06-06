@@ -1,0 +1,30 @@
+@use "../../../styles/Mixins";
+@use "../../../styles/variables";
+
+.video-section {
+  @include Mixins.tablet {
+    padding: 0 2.25rem;
+    background-color: variables.$brainFlix-DarkBlack;
+  }
+
+  @include Mixins.desktop {
+    padding: 0 8rem;
+  }
+
+  .video-frame {
+    width: 100%;
+    max-height: 18rem;
+    @include Mixins.tablet {
+      min-height: 29.68rem;
+      max-height: 29.68rem;
+    }
+  }
+
+  .button {
+    background-color: variables.$brainFlixBlack;
+    width: 1.43rem;
+    height: 0.81rem;
+    padding: 0.25rem;
+    border-radius: 0.31rem;
+  }
+}
