@@ -59,7 +59,6 @@ class Main extends React.Component {
       );
 
       newRequest.then((response) => {
-        console.log(response);
         this.setState({
           ...prevState,
           videoDetails: response.data,

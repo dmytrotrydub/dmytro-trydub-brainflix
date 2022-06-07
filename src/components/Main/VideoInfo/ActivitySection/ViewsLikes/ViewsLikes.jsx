@@ -1,4 +1,4 @@
-import "./viewsLikes.scss";
+import "./ViewsLikes.scss";
 import viewsIcon from "../../../../../assets/images/icons/views.svg";
 import likesIcon from "../../../../../assets/images/icons/likes.svg";
 

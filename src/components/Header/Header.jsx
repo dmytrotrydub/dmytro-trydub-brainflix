@@ -1,4 +1,4 @@
-import "./header.scss";
+import "./Header.scss";
 import logoImg from "../../assets/images/logo/BrainFlixLogo.svg";
 import Search from "./Comment-input/Search";
 import { Link } from "react-router-dom";

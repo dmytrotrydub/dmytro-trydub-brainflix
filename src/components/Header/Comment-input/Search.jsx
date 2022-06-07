@@ -1,4 +1,4 @@
-import "./search.scss";
+import "./Search.scss";
 import "../../UI/InputText/inputText.scss";
 import avatar from "../../../assets/images/Mohan-muruge.jpg";
 import InputText from "../../UI/InputText/InputText";

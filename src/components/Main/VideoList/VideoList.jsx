@@ -1,10 +1,8 @@
-import "./videoList.scss";
+import "./VideoList.scss";
 import Thumbnail from "./Thumbnail/Thumbnail";
 import { Link } from "react-router-dom";
 
 const VideoList = (props) => {
-  console.log(props);
-
   const videoList = props.videoList
     .filter((video) => {
       return video.id !== props.selectedVideo.id;

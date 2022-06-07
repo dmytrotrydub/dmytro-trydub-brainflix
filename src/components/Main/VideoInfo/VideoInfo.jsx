@@ -1,4 +1,4 @@
-import "./video-info.scss";
+import "./Video-info.scss";
 import ActivitySection from "./ActivitySection/ActivitySection";
 import VideoDescription from "./ActivitySection/VideoDescription/VideoDesctiption";
 import CommentForm from "./ActivitySection/CommentForm/CommentForm";
@@ -6,7 +6,6 @@ import PostedComments from "./ActivitySection/PostedComments/PostedComments";
 import {timeConverter} from "../../helper/Helper";
 
 function VideoInfo(props) {
-  console.log(props.videoDescription.timestamp);
   // !data convertion
   const convertedTime = timeConverter(props.videoDescription.timestamp);
   // !---------------]
