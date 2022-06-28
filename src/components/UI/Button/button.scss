@@ -16,6 +16,9 @@
   margin: 0.5rem 0;
   font-weight: 700;
   text-align: center;
+  text-decoration: none;
+
+  
 
   @include Mixins.tablet {
     min-width: 9.37rem;

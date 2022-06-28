@@ -13,12 +13,12 @@ class App extends React.Component {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Redirect exact from={"/"} to={"/home"} />
+          <Redirect exact from={"/"} to={"/videos"} />
           <Route
-            path={"/home"}
+            path={"/videos"}
             render={(props) => <Home props={this.state} routerProps={props} />}
           />
-          <Route path='/video/:id' render={(props) => <Home path='/video' routerProps={props} />} />
+          <Route path='/video/:id' render={(props) => <Home routerProps={props} />} />
           <Route path='/videoupload' render={(props)=><VideoUpload />} />
         </Switch>
       </BrowserRouter>

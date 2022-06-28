@@ -12,6 +12,6 @@ export const timeConverter = (dateConv) => {
 
 
 export const filteredVideo = (videoArray, filteredVideo) => {
-  const chosenVideo = videoArray.filter((id) => id.id === filteredVideo);
+  const chosenVideo = videoArray.filter((video) => video.id === filteredVideo.id);
   return chosenVideo;
 };

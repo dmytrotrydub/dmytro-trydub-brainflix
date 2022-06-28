@@ -38,12 +38,14 @@ const VideoUpload = (props) => {
               <textarea id='video-description' placeholder='Add a description to your video' />
             </div>
           </div>
-          <div className="buttons-holder">
-            <Button className='button' id='publish-button'>
-              PUBLISH
-            </Button>
+          <div className='buttons-holder'>
+            <Link>
+              <h3 className='button publish' id='publish-button'>
+                PUBLISH
+              </h3>
+            </Link>
             <div className='link-holder'>
-              <Link style={linkStyle} className='cancel-upload' to='/home'>
+              <Link to='/videos' style={linkStyle} className='cancel-upload'>
                 CANCEL
               </Link>
             </div>

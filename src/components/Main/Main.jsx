@@ -1,11 +1,10 @@
 import "./Main.scss";
 import VideoInfo from "./VideoInfo/VideoInfo";
 import VideoList from "./VideoList/VideoList";
-// import { timeConverter } from "../helper/Helper";
 import Video from "./Video-section/Video";
 import React from "react";
 import axios from "axios";
-// import { timeConverter} from "../helper/Helper";
+
 
 class Main extends React.Component {
   constructor(props) {
@@ -17,32 +16,24 @@ class Main extends React.Component {
   }
 
   componentDidMount = () => {
-    const url = "https://project-2-api.herokuapp.com";
-    const apiKey = "91cf2af5-8d83-43f3-9997-f3c637393ce0";
-    // console.log(singleVideoRequestRoute);
     //!creating an object to update the state with it after
-    let videoList = null
-    let singleVideo = null
+    let videoList = null;
+    let singleVideo = null;
 
-    const videoRequest = axios.get(`${url}/videos/?api_key=<${apiKey}>`);
+    const newRequest = "http://localhost:8080/videos";
+    const videoRequest = axios.get(`${newRequest}`);
     videoRequest
       //!getting first request for an array of videos
       .then((response) => {
         videoList = response.data;
-        this.setState({videos:videoList});
-      })
-      //!Getting second request for single video
-      .then((response) => {
-        const singleVideoRequest = axios.get(
-          `${url}/videos/${videoList[0].id}?api_key=<${apiKey}>`
-        );
-        singleVideoRequest.then((response) => {
-          singleVideo = response.data;
-          this.setState({videoDetails:singleVideo})
-        });
+        this.setState({ videos: videoList });
       });
-    
-  
+    //!Getting second request for single video
+    const singleVideoRequest = axios.get(`http://localhost:8080/video`);
+    singleVideoRequest.then((response) => {
+      singleVideo = response.data;
+      this.setState({ videoDetails: singleVideo });
+    });
   };
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -52,13 +43,14 @@ class Main extends React.Component {
       this.props.videoData.routerProps.match.params.id
     ) {
       //!making request for a state update after updating of it
-      const url = "https://project-2-api.herokuapp.com";
-      const apiKey = "91cf2af5-8d83-43f3-9997-f3c637393ce0";
+     
       const newRequest = axios.get(
-        `${url}/videos/${this.props.videoData.routerProps.match.params.id}?api_key=<${apiKey}>`
-      );
 
+        `http://localhost:8080/videos/${this.props.videoData.routerProps.match.params.id}`
+      );
+         console.log(this.props.videoData.routerProps.match.params.id);
       newRequest.then((response) => {
+        console.log(response);
         this.setState({
           ...prevState,
           videoDetails: response.data,
@@ -79,7 +71,6 @@ class Main extends React.Component {
               likes={this.state.videoDetails.likes}
               views={this.state.videoDetails.views}
               channel={this.state.videoDetails.channel}
-              // date={convertedTime}
               postedComments={this.state.videoDetails.comments}
             />
           ) : null}

@@ -10,7 +10,7 @@ const VideoList = (props) => {
     .map((video) => (
       <Link
         style={{ textDecoration: "none", color: "inherit" }}
-        to={`/video/${video.id}`}
+        to={`/video/:${video.id}`}
         key={video.id}
       >
         <Thumbnail video={video} />
